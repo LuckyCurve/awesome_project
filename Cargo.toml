@@ -6,6 +6,4 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-
-[target.x86_64-unknown-linux-gnu]
-linker = "x86_64-w64-mingw32-gcc"
+reqwest = { version = "0.11.22", features = ["blocking"] }
