@@ -17,8 +17,9 @@ def get_weather():
 
     res += format(f'{base_info["province"]}省{base_info["city"]}' + SPLIT)
     for cast in base_info['casts']:
-        res += f'日期：{cast["date"]} \t白天天气：{cast["dayweather"]} \t夜间天气：{cast["nightweather"]}' + SPLIT
+        res += f'{cast["date"]}   白天天气：{cast["dayweather"]}   夜间天气：{cast["nightweather"]}' + SPLIT
 
+    print('get weather info successfully')
     return res
 
 
