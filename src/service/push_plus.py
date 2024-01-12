@@ -7,7 +7,7 @@ def text_message(message):
     url = "http://www.pushplus.plus/send"
     params = {
         'token': PUSH_PLUS_TOKEN,
-        'title': '测试消息',
+        'title': '天气预警',
         'content': message
     }
     response = requests.get(url, params=params)

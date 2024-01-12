@@ -6,7 +6,8 @@ on:
   
 jobs:
 
-  build:
+  execute:
+    name: execute weather information push
     runs-on: ubuntu-latest
 
     steps:
