@@ -11,7 +11,7 @@ def text_message(message):
         'content': message
     }
     response = requests.get(url, params=params)
-    print(response.status_code)
+    print(f"push plus response: {response.json()}")
 
 
 if __name__ == '__main__':

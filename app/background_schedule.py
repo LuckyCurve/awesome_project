@@ -1,6 +1,6 @@
 from apscheduler.schedulers.blocking import BlockingScheduler
-import src.service.push_plus as push_plus
-import src.service.weather as weather
+import service.push_plus as push_plus
+import service.weather as weather
 
 
 def get_weather_and_push_message():
