@@ -1,4 +1,4 @@
-import background_schedule
+import service.schedule_weixin as service
 
 if __name__ == '__main__':
-    schedule.get_weather_and_push_message()
+    service.push_weather_to_weixin()
