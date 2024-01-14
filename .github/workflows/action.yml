@@ -3,7 +3,7 @@ on:
   schedule:
     - cron: '0 2,12 * * *' #每日11点40,17点40，两个时间点执行任务
   workflow_dispatch:
-  
+
 jobs:
 
   execute:
@@ -23,4 +23,4 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Run Python script
-        run: python app/github_action.py
+        run: python github_action.py

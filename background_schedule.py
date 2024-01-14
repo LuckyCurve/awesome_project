@@ -1,8 +1,3 @@
-import os
-import sys
-
-sys.path.append(os.path.dirname(sys.path[0]))
-
 from apscheduler.schedulers.blocking import BlockingScheduler
 
 import service.schedule_weixin as service
