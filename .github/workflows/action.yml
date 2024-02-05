@@ -7,9 +7,8 @@ on:
 jobs:
 
   execute:
-    name: execute weather information push
+    name: execute
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v2

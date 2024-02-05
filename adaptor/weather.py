@@ -1,3 +1,5 @@
+import json
+
 import requests
 
 
@@ -19,7 +21,7 @@ def get_weather():
     for cast in base_info['casts']:
         res += f'{cast["date"]}   白天天气：{cast["dayweather"]}   夜间天气：{cast["nightweather"]}' + SPLIT
 
-    print('get weather info successfully')
+    print(f'get weather info successfully, response: {json.dumps(response, ensure_ascii=False)}')
     return res
 
 
