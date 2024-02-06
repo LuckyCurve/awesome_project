@@ -1,8 +1,11 @@
 name: Schedule Worker
 on:
   schedule:
-    - cron: '0 2,12 * * *' #每日11点40,17点40，两个时间点执行任务
-  workflow_dispatch:
+    - cron: '0 2,12 * * *' #每天 10点、 20点 执行任务
+  on:
+    push:
+      branches:
+        - master #当master分支提交时候执行任务
 
 jobs:
 
@@ -22,4 +25,4 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Run Python script
-        run: python github_action.py
+        run: python src/github_action.py
