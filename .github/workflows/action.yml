@@ -2,10 +2,9 @@ name: Schedule Worker
 on:
   schedule:
     - cron: '0 2,12 * * *' #每天 10点、 20点 执行任务
-  on:
-    push:
-      branches:
-        - master #当master分支提交时候执行任务
+  push:
+    branches:
+     - master #当master分支提交时候执行任务
 
 jobs:
 
