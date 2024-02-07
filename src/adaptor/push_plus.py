@@ -1,6 +1,6 @@
 import requests
 from enum import Enum
-from src.utils import LOGGER
+from utils import LOGGER
 
 PUSH_PLUS_TOKEN = "aa7ea9fc16f546b6be55fa06965f8d33"
 

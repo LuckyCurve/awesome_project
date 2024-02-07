@@ -1,7 +1,7 @@
 import json
 
 import requests
-from ..utils import LOGGER
+from utils import LOGGER
 
 
 def get_weather():

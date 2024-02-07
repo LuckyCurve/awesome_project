@@ -1,4 +1,4 @@
-from src.adaptor import push_plus, weather
+from adaptor import push_plus, weather
 
 
 def push_weather_to_weixin():
